@@ -11,6 +11,7 @@
     "profiles":
     [
         {
+            "cursorShape": "filledBox",
             "name": "ubuntu_1804_B",
             "guid": "{e4def40d-823e-57e2-90bc-f1500071ca2c}",
             "hidden": false,
@@ -18,7 +19,7 @@
             "fontFace": "Cascadia Code",
             "padding" : "5, 5, 5, 5",
             "source": "Windows.Terminal.Wsl",
-            "cursorShape": "filledBox"
+            "startingDirectory" : "\\\\wsl$\\ubuntu_1804_B\\home\\lmatheson4"
         },
         {
             "name" : "Git Bash",
@@ -27,6 +28,7 @@
             "background" : "#000000",
             "closeOnExit" : true,
             "colorScheme" : "Campbell",
+            "closeOnExit": "always",
             "commandline" : "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
@@ -35,7 +37,9 @@
             "historySize" : 9001,
             "icon" : "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico",
             "padding" : "5, 5, 5, 5",
-            "snapOnInput" : true
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%"
+
         },
         {
             "name" : "Cygwin",
@@ -43,6 +47,7 @@
             "background" : "#000000",
             "closeOnExit" : true,
             "colorScheme" : "Campbell",
+            "closeOnExit": "always",
             "commandline" : "\"c:\\cygwin\\bin\\bash.exe\" --login",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
@@ -51,18 +56,23 @@
             "historySize" : 9001,
             "icon" : "c:\\cygwin\\Cygwin-Terminal.ico",
             "padding" : "5, 5, 5, 5",
-            "snapOnInput" : true
+            "snapOnInput" : true,
+            "startingDirectory": "c:\\cygwin\\home\\MathesonLes"
         },
         {
             "name": "Windows PowerShell",
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "commandline": "cmd.exe",
             "commandline": "powershell.exe",
-            "hidden": false
+            "hidden": false,
+            "startingDirectory": "c:\\Users\\MathesonLes"
         },
         {
             "name": "cmd",
             "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "closeOnExit": "always",
             "commandline": "cmd.exe",
+            "startingDirectory": "c:\\Users\\MathesonLes",
             "hidden": false
         },
         {
@@ -72,10 +82,12 @@
             "source": "Windows.Terminal.Azure"
         },
         {
+            "closeOnExit": "always",
             "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
             "hidden": false,
             "name": "Ubuntu-18.04",
-            "source": "Windows.Terminal.Wsl"
+            "source": "Windows.Terminal.Wsl",
+            "startingDirectory" : "\\\\wsl$\\ubuntu_1804_B\\home\\lmatheson4"
         }
     ],
 
