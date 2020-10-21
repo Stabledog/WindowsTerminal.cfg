@@ -1,12 +1,15 @@
 
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
+// 
+// Pro tip: configure VS Code as the editor for .json files in Windows Explorer to get autocompletion
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
     "defaultProfile": "{e4def40d-823e-57e2-90bc-f1500071ca2c}",
     "theme":"dark",
+    "multiLinePasteWarning": false,
 
     "profiles":
     [
