@@ -1,7 +1,7 @@
 
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
-// 
+//
 // Pro tip: configure VS Code as the editor for .json files in Windows Explorer to get autocompletion
 
 {
@@ -29,12 +29,11 @@
             "guid" : "{00000000-0000-0000-0000-000000012345}",
             //"acrylicOpacity" : 0.75,
             "background" : "#000000",
-            "closeOnExit" : true,
             "colorScheme" : "Campbell",
             "closeOnExit": "always",
             "commandline" : "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l",
             "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
+            "cursorShape" : "filledBox",
             "fontFace": "Cascadia Code",
             "fontSize" : 10,
             "historySize" : 9001,
@@ -53,7 +52,7 @@
             "closeOnExit": "always",
             "commandline" : "\"c:\\cygwin\\bin\\bash.exe\" --login",
             "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
+            "cursorShape" : "filledBox",
             "fontFace": "Cascadia Code",
             "fontSize" : 10,
             "historySize" : 9001,
