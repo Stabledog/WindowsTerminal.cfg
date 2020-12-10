@@ -47,7 +47,6 @@
             "name" : "Cygwin",
             "guid" : "{00000000-0000-0000-0000-000000012346}",
             "background" : "#000000",
-            "closeOnExit" : true,
             "colorScheme" : "Campbell",
             "closeOnExit": "always",
             "commandline" : "\"c:\\cygwin\\bin\\bash.exe\" --login",
@@ -64,7 +63,6 @@
         {
             "name": "Windows PowerShell",
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "commandline": "cmd.exe",
             "commandline": "powershell.exe",
             "hidden": false,
             "startingDirectory": "c:\\Users\\MathesonLes"
@@ -98,5 +96,13 @@
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": []
+    "keybindings": [
+        { "command": "newTab", "keys": "ctrl+shift+t" },
+        { "command": "nextTab", "keys": "ctrl+alt+N"},
+        { "command": "prevTab", "keys": "ctrl+alt+P"},
+        { "command": {"action": "moveFocus","direction":"left"},"keys":"ctrl+shift+H"},
+        { "command": {"action": "moveFocus","direction":"right"},"keys":"ctrl+shift+L"},
+
+        { "command": "commandPalette", "keys": "ctrl+shift+P"}
+    ]
 }
