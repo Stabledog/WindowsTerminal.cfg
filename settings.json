@@ -46,18 +46,21 @@
         "list": 
         [
             {
+                "antialiasingMode": "cleartype",
                 "bellStyle": "none",
                 "closeOnExit": "always",
-                "colorScheme": "One Half Light",
+                "colorScheme": "Tango Dark",
                 "cursorShape": "filledBox",
+                "experimental.retroTerminalEffect": false,
                 "fontFace": "Cascadia Code",
                 "guid": "{e4def40d-823e-57e2-90bc-f1500071ca2c}",
                 "hidden": false,
                 "icon": "C:\\Users\\MathesonLes\\Pictures\\piano-keyboard.jpg",
                 "name": "ubuntu_1804_B",
-                "padding": "5, 5, 5, 5",
+                "padding": "5",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_B\\home\\lmatheson4"
+                "startingDirectory": "\\\\wsl$\\ubuntu_1804_B\\home\\lmatheson4",
+                "useAcrylic": false
             },
             {
                 "background": "#000000",
