@@ -132,6 +132,12 @@
                 "name": "ubuntu-landlord",
                 "source": "Windows.Terminal.Wsl",
                 "tabTitle": "ubuntu-landlord"
+            },
+            {
+                "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
+                "hidden": false,
+                "name": "ubuntu_1804_wsl2",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
