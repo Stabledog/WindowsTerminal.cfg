@@ -1,7 +1,16 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "ctrl+shift+5"
+        },
         {
             "command": 
             {
@@ -20,17 +29,17 @@
             "command": 
             {
                 "action": "moveFocus",
-                "direction": "right"
+                "direction": "left"
             },
-            "keys": "ctrl+shift+l"
+            "keys": "ctrl+shift+h"
         },
         {
             "command": 
             {
                 "action": "moveFocus",
-                "direction": "left"
+                "direction": "right"
             },
-            "keys": "ctrl+shift+h"
+            "keys": "ctrl+shift+l"
         },
         {
             "command": 
@@ -40,18 +49,6 @@
             "keys": "ctrl+alt+p"
         },
         {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "vertical"
-            },
-            "keys": "ctrl+shift+5"
-        },
-        {
             "command": 
             {
                 "action": "commandPalette"
@@ -59,7 +56,11 @@
             "keys": "ctrl+shift+p"
         },
         {
-            "command":
+            "command": "unbound",
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": 
             {
                 "action": "globalSummon",
                 "monitor": "toMouse",
@@ -67,16 +68,88 @@
             },
             "keys": "win+`"
         }
-
     ],
     "copyOnSelect": true,
-    "defaultProfile": "{475631be-b923-54f7-9d00-8085721e29f1}",
+    "defaultProfile": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
+    "experimental.rendering.software": false,
     "multiLinePasteWarning": false,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "Cascadia Code",
+                "size": 14
+            }
+        },
         "list": 
         [
+            {
+                "antialiasingMode": "grayscale",
+                "bellStyle": "none",
+                "closeOnExit": "always",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl1 /usr/bin/tmux",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "Cascadia Code"
+                },
+                "guid": "{475631be-b923-54f7-9d00-8085721e29f1}",
+                "hidden": false,
+                "icon": "C:\\Users\\MathesonLes\\Pictures\\cat-hogwarts.jpg",
+                "name": "WSL_1.tmux",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl1\\home\\lmatheson4",
+                "tabTitle": "WSL 1.tmux"
+            },
+            {
+                "altGrAliasing": false,
+                "antialiasingMode": "grayscale",
+                "bellStyle": "none",
+                "closeOnExit": "always",
+                "colorScheme": "Campbell",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl2 /home/lmatheson4/.local/bin/tmux",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "Cascadia Code"
+                },
+                "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
+                "hidden": false,
+                "icon": "C:\\temp\\20211030_161423.jpg",
+                "name": "WSL_2.tmux",
+                "opacity": 100,
+                "scrollbarState": "hidden",
+                "snapOnInput": true,
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
+                "tabTitle": "WSL 2.tmux",
+                "useAcrylic": false
+            },
+            {
+                "altGrAliasing": false,
+                "antialiasingMode": "grayscale",
+                "bellStyle": "none",
+                "closeOnExit": "always",
+                "colorScheme": "Campbell",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl2 /home/lmatheson4/bin/bbonly/devunix-launch.sh",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "Cascadia Code"
+                },
+                "guid": "{79cd67a5-53e5-437e-ac97-212359868452}",
+                "hidden": false,
+                "icon": "C:\\Users\\MathesonLes\\Pictures\\halle-with-napkin-ring.png",
+                "name": "DevUnix",
+                "opacity": 100,
+                "scrollbarState": "hidden",
+                "snapOnInput": true,
+                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
+                "tabTitle": "DevUnix",
+                "useAcrylic": false
+            },
             {
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -127,28 +200,6 @@
                 "startingDirectory": "c:\\cygwin\\home\\MathesonLes"
             },
             {
-                "acrylicOpacity": 0.87,
-                "altGrAliasing": false,
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "colorScheme": "Vintage",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Mono"
-                },
-                "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
-                "hidden": false,
-                "name": "WSL_2",
-                "scrollbarState": "hidden",
-                "snapOnInput": true,
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
-                "tabTitle": "WSL 2",
-                "useAcrylic": false
-            },
-            {
                 "closeOnExit": "always",
                 "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -170,22 +221,6 @@
                 "tabTitle": "ubuntu-landlord"
             },
             {
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Code"
-                },
-                "guid": "{475631be-b923-54f7-9d00-8085721e29f1}",
-                "hidden": false,
-                "name": "WSL_1",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl1\\home\\lmatheson4",
-                "tabTitle": "WSL 1"
-            },
-            {
                 "altGrAliasing": false,
                 "antialiasingMode": "grayscale",
                 "bellStyle": "none",
@@ -197,6 +232,7 @@
                 {
                     "face": "Cascadia Code"
                 },
+                "guid": "{9e554928-79f1-5996-b101-1b4e7acf32a6}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "zsh",
@@ -204,6 +240,29 @@
                 "snapOnInput": true,
                 "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
                 "tabTitle": "zsh"
+            },
+            {
+                "altGrAliasing": false,
+                "antialiasingMode": "grayscale",
+                "bellStyle": "none",
+                "closeOnExit": "graceful",
+                "colorScheme": "Campbell",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl2 /home/lmatheson4/.local/bin/landcli --sh",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "Cascadia Code"
+                },
+                "guid": "{e1859dc2-bcf3-47b2-9958-6f012966c783}",
+                "hidden": false,
+                "icon": "C:\\Users\\MathesonLes\\Pictures\\bb-goog-avatar.png",
+                "name": "landlord-live",
+                "opacity": 100,
+                "scrollbarState": "hidden",
+                "snapOnInput": true,
+                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
+                "tabTitle": "landlord-live",
+                "useAcrylic": false
             }
         ]
     },
