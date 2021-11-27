@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -8,6 +9,14 @@
                 "action": "newTab"
             },
             "keys": "ctrl+shift+t"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "ctrl+shift+5"
         },
         {
             "command": 
@@ -46,20 +55,12 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "vertical"
-            },
-            "keys": "ctrl+shift+5"
-        },
-        {
-            "command": 
-            {
                 "action": "commandPalette"
             },
             "keys": "ctrl+shift+p"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "globalSummon",
                 "monitor": "toMouse",
@@ -67,10 +68,9 @@
             },
             "keys": "win+`"
         }
-
     ],
     "copyOnSelect": true,
-    "defaultProfile": "{475631be-b923-54f7-9d00-8085721e29f1}",
+    "defaultProfile": "{ee06a983-7129-4f3b-ad0e-7006eb397620}",
     "multiLinePasteWarning": false,
     "profiles": 
     {
@@ -127,28 +127,6 @@
                 "startingDirectory": "c:\\cygwin\\home\\MathesonLes"
             },
             {
-                "acrylicOpacity": 0.87,
-                "altGrAliasing": false,
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "colorScheme": "Vintage",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Mono"
-                },
-                "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
-                "hidden": false,
-                "name": "WSL_2",
-                "scrollbarState": "hidden",
-                "snapOnInput": true,
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
-                "tabTitle": "WSL 2",
-                "useAcrylic": false
-            },
-            {
                 "closeOnExit": "always",
                 "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -163,29 +141,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{8f37256d-c9b0-52d6-8e64-dc0cb42cfa8a}",
-                "hidden": false,
-                "name": "ubuntu-landlord",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "ubuntu-landlord"
-            },
-            {
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Code"
-                },
-                "guid": "{475631be-b923-54f7-9d00-8085721e29f1}",
-                "hidden": false,
-                "name": "WSL_1",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl1\\home\\lmatheson4",
-                "tabTitle": "WSL 1"
-            },
-            {
                 "altGrAliasing": false,
                 "antialiasingMode": "grayscale",
                 "bellStyle": "none",
@@ -197,6 +152,7 @@
                 {
                     "face": "Cascadia Code"
                 },
+                "guid": "{9e554928-79f1-5996-b101-1b4e7acf32a6}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "zsh",
@@ -204,6 +160,16 @@
                 "snapOnInput": true,
                 "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
                 "tabTitle": "zsh"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu-20.04",
+                "guid": "{ee06a983-7129-4f3b-ad0e-7006eb397620}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu-20.04",
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "Ubuntu 20.04"
             }
         ]
     },
