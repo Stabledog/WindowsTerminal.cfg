@@ -6,6 +6,13 @@
         {
             "command": 
             {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+alt+p"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "right"
             },
@@ -17,6 +24,18 @@
                 "action": "newTab"
             },
             "keys": "ctrl+shift+t"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+plus"
         },
         {
             "command": 
@@ -36,28 +55,9 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "ctrl+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "prevTab"
-            },
-            "keys": "ctrl+alt+p"
-        },
-        {
-            "command": 
-            {
                 "action": "commandPalette"
             },
             "keys": "ctrl+shift+p"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
         },
         {
             "command": 
@@ -69,8 +69,8 @@
             "keys": "win+`"
         }
     ],
-    "copyOnSelect": true,
-    "defaultProfile": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
+    "copyOnSelect": false,
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "experimental.rendering.software": false,
     "multiLinePasteWarning": false,
     "profiles": 
@@ -79,7 +79,7 @@
         {
             "font": 
             {
-                "face": "Cascadia Code",
+                "face": "Consolas",
                 "size": 14
             }
         },
@@ -109,7 +109,7 @@
                 "bellStyle": "none",
                 "closeOnExit": "always",
                 "colorScheme": "Campbell",
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl2 /home/lmatheson4/.local/bin/tmux",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d ubuntu_1804_wsl2 bash --login",
                 "cursorShape": "filledBox",
                 "font": 
                 {
@@ -118,13 +118,13 @@
                 "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
                 "hidden": false,
                 "icon": "C:\\temp\\20211030_161423.jpg",
-                "name": "WSL_2.tmux",
+                "name": "WSL2_old",
                 "opacity": 100,
                 "scrollbarState": "hidden",
                 "snapOnInput": true,
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
-                "tabTitle": "WSL 2.tmux",
+                "tabTitle": "WSL2_old",
                 "useAcrylic": false
             },
             {
@@ -151,7 +151,6 @@
                 "useAcrylic": false
             },
             {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell",
@@ -201,7 +200,6 @@
             },
             {
                 "closeOnExit": "always",
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd",
@@ -212,13 +210,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{8f37256d-c9b0-52d6-8e64-dc0cb42cfa8a}",
-                "hidden": false,
-                "name": "ubuntu-landlord",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "ubuntu-landlord"
             },
             {
                 "altGrAliasing": false,
@@ -285,6 +276,18 @@
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "msys2"
+            },
+            {
+                "bellStyle": "none",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu-20.04 bash --login",
+                "cursorShape": "filledBox",
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\lmatheson4",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Wsl2-New"
             }
         ]
     },
