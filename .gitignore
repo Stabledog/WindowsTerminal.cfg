@@ -1,2 +1,3 @@
 *.backup
 state.json
+.ready
