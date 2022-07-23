@@ -1,25 +1,21 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab"
             },
             "keys": "ctrl+shift+t"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "prevTab"
             },
             "keys": "ctrl+alt+p"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right"
             },
@@ -30,38 +26,33 @@
             "keys": "alt+shift+plus"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "nextTab"
             },
             "keys": "ctrl+alt+n"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "right"
             },
             "keys": "ctrl+shift+l"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "left"
             },
             "keys": "ctrl+shift+h"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "ctrl+shift+p"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "globalSummon",
                 "monitor": "toMouse",
                 "name": "_quake"
@@ -72,20 +63,16 @@
     "copyOnSelect": true,
     "defaultProfile": "{ee06a983-7129-4f3b-ad0e-7006eb397620}",
     "multiLinePasteWarning": false,
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "bellStyle": "none",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "size": 14
             },
             "unfocusedAppearance": {}
         },
-        "list": 
-        [
+        "list": [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -99,8 +86,7 @@
                 "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "filledBox",
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Code",
                     "size": 10
                 },
@@ -121,8 +107,7 @@
                 "commandline": "\"c:\\cygwin64\\bin\\bash.exe\" --login",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "filledBox",
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Code",
                     "size": 14
                 },
@@ -156,8 +141,7 @@
                 "colorScheme": "Campbell",
                 "commandline": "wsl.exe -d ubuntu_1804_wsl2 zsh",
                 "cursorShape": "filledBox",
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Code"
                 },
                 "guid": "{9e554928-79f1-5996-b101-1b4e7acf32a6}",
@@ -206,8 +190,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
