@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -8,6 +9,10 @@
                 "action": "newTab"
             },
             "keys": "ctrl+shift+t"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+plus"
         },
         {
             "command": 
@@ -35,21 +40,17 @@
         {
             "command": 
             {
-                "action": "prevTab"
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+alt+p"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
+            "keys": "ctrl+shift+5"
         },
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "vertical"
+                "action": "prevTab"
             },
-            "keys": "ctrl+shift+5"
+            "keys": "ctrl+alt+p"
         },
         {
             "command": 
@@ -59,7 +60,7 @@
             "keys": "ctrl+shift+p"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "globalSummon",
                 "monitor": "toMouse",
@@ -67,25 +68,38 @@
             },
             "keys": "win+`"
         }
-
     ],
+    "copyFormatting": "none",
     "copyOnSelect": true,
-    "defaultProfile": "{475631be-b923-54f7-9d00-8085721e29f1}",
+    "defaultProfile": "{55e06dda-7558-47c1-9d13-734c0c873f4b}",
+    "initialRows": 40,
     "multiLinePasteWarning": false,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "size": 14
+            },
+            "unfocusedAppearance": 
+            {
+                "colorScheme": "One Half Dark"
+            }
+        },
         "list": 
         [
             {
-                "commandline": "powershell.exe",
+                "elevate": true,
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell",
-                "startingDirectory": "c:\\Users\\MathesonLes"
+                "name": "PowerShell Admin",
+                "startingDirectory": "c:\\Users\\lmatheson4"
             },
             {
                 "background": "#000000",
+                "bellStyle": "none",
                 "closeOnExit": "always",
                 "colorScheme": "Campbell",
                 "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l",
@@ -102,7 +116,9 @@
                 "name": "Git Bash",
                 "padding": "5, 5, 5, 5",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%"
+                "startingDirectory": "%USERPROFILE%",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Git bash"
             },
             {
                 "altGrAliasing": false,
@@ -110,100 +126,44 @@
                 "bellStyle": "none",
                 "closeOnExit": "always",
                 "colorScheme": "Campbell",
-                "commandline": "\"c:\\cygwin\\bin\\bash.exe\" --login",
+                "commandline": "\"c:\\cygwin64\\bin\\bash.exe\" --login",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "filledBox",
                 "font": 
                 {
                     "face": "Cascadia Code",
-                    "size": 12
+                    "size": 14
                 },
                 "guid": "{00000000-0000-0000-0000-000000012346}",
                 "historySize": 9001,
-                "icon": "c:\\cygwin\\Cygwin-Terminal.ico",
+                "icon": "c:\\cygwin64\\Cygwin-Terminal.ico",
                 "name": "Cygwin",
                 "padding": "5, 5, 5, 5",
                 "snapOnInput": true,
-                "startingDirectory": "c:\\cygwin\\home\\MathesonLes"
-            },
-            {
-                "acrylicOpacity": 0.87,
-                "altGrAliasing": false,
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "colorScheme": "Vintage",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Mono"
-                },
-                "guid": "{c75b1e52-b7be-54cd-89ec-7764520fa90c}",
-                "hidden": false,
-                "name": "WSL_2",
-                "scrollbarState": "hidden",
-                "snapOnInput": true,
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
-                "tabTitle": "WSL 2",
-                "useAcrylic": false
+                "startingDirectory": "c:\\cygwin64\\home\\lmatheson4"
             },
             {
                 "closeOnExit": "always",
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd",
                 "startingDirectory": "c:\\Users\\MathesonLes"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{8f37256d-c9b0-52d6-8e64-dc0cb42cfa8a}",
-                "hidden": false,
-                "name": "ubuntu-landlord",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "ubuntu-landlord"
-            },
-            {
-                "antialiasingMode": "grayscale",
                 "bellStyle": "none",
-                "closeOnExit": "always",
+                "colorScheme": "Tango Dark",
+                "commandline": "%SystemRoot%\\System32\\wsl.exe",
                 "cursorShape": "filledBox",
                 "font": 
                 {
                     "face": "Cascadia Code"
                 },
-                "guid": "{475631be-b923-54f7-9d00-8085721e29f1}",
+                "guid": "{55e06dda-7558-47c1-9d13-734c0c873f4b}",
                 "hidden": false,
-                "name": "WSL_1",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl1\\home\\lmatheson4",
-                "tabTitle": "WSL 1"
-            },
-            {
-                "altGrAliasing": false,
-                "antialiasingMode": "grayscale",
-                "bellStyle": "none",
-                "closeOnExit": "always",
-                "colorScheme": "Campbell",
-                "commandline": "wsl.exe -d ubuntu_1804_wsl2 zsh",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Code"
-                },
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "zsh",
-                "scrollbarState": "hidden",
-                "snapOnInput": true,
-                "startingDirectory": "\\\\wsl$\\ubuntu_1804_wsl2\\home\\lmatheson4",
-                "tabTitle": "zsh"
+                "icon": "C:\\Windows\\System32\\wsl.exe",
+                "name": "WSL2",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\lmatheson4",
+                "tabTitle": "WSL2"
             }
         ]
     },
@@ -421,5 +381,6 @@
     "startOnUserLogin": false,
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "titleLength",
-    "theme": "system"
+    "theme": "system",
+    "trimPaste": false
 }
