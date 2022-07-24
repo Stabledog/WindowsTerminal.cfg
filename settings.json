@@ -34,6 +34,20 @@
         },
         {
             "command": {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "ctrl+shift+j"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": {
                 "action": "splitPane",
                 "split": "right"
             },
