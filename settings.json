@@ -10,26 +10,26 @@
         },
         {
             "command": {
-                "action": "prevTab"
-            },
-            "keys": "ctrl+alt+p"
-        },
-        {
-            "command": {
                 "action": "splitPane",
                 "split": "right"
             },
             "keys": "ctrl+shift+5"
         },
         {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
+            "command": {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+alt+p"
         },
         {
             "command": {
                 "action": "nextTab"
             },
             "keys": "ctrl+alt+n"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+plus"
         },
         {
             "command": {
@@ -88,7 +88,7 @@
                 "cursorShape": "filledBox",
                 "font": {
                     "face": "Cascadia Code",
-                    "size": 10
+                    "size": 14
                 },
                 "guid": "{00000000-0000-0000-0000-000000012345}",
                 "historySize": 9001,
